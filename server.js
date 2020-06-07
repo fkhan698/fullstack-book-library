@@ -22,7 +22,9 @@ db.once('open', () => console.log('Connected to Mongoose'));
 //View engine
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
-app.set('views')
+app.set('layout', 'layouts/layout')
+app.use(expressLayouts)
+app.use(express.static('public'))
 
 
 app.use('/', indexRouter);
