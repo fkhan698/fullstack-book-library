@@ -1,7 +1,7 @@
 FilePond.registerPlugin(
+    FilePondPluginFileEncode,
     FilePondPluginImagePreview,
     FilePondPluginImageResize,
-    FilePondPluginFileEncode
 )
 
 FilePond.setOptions({
@@ -9,5 +9,6 @@ FilePond.setOptions({
     imageResizeTargetWidth: 100,
     imageResizeTargetHeight: 150
 })
+
 
 FilePond.parse(document.body);
