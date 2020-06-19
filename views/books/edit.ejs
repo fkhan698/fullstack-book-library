@@ -1,22 +1,13 @@
-<div>
+<h2>Edit Books Page</h2>
+
+<form action="/books/<%= book.id %>?_method=PUT" method="POST">
+    <div>
         <label>Title</label>
         <input type="text" name="title" required value="<%= book.title %>">
       </div>
       <div>
         <label>Author</label>
-        <select required name="author">
-            <% authors.forEach(author => { %>
-                <% if (author.id === String(book.author)) { %>
-                <option selected label="<%= author.name %>" value="<%= author.id %>">
-                <%= author.name %>
-                </option>
-                <%} else {%>
-                <option label="<%= author.name %>" value="<%= author.id %>">
-                <%= author.name %>
-                </option>
-                <% } %>
-            <% }) %>
-        </select>
+       
       </div>
       <div>
         <label>Publish Date</label>
@@ -36,3 +27,7 @@
         <label>Description</label>
         <textarea required name="description"><%= book.description %></textarea>
       </div> 
+
+<a href="/books">Cancel</a>
+<button type="submit"> Update Book</button>
+</form>
