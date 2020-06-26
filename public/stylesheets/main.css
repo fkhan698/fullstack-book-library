@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Raleway&display=swap');
+@import '/public/stylesheets/shared/variables.css';
+@import '/public//stylesheets/shared/header.css';
+@import '/public/stylesheets/shared/buttons.css';
+
+:root {
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--color-text-light);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background-gradient);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.header-nav ul {
+    cursor: pointer;
+ }
+
+ .page-header {
+     font-size: 2.5rem;
+ }
+
+ .btn {
+    font-family:'Montserrat', sans-serif;
+ }
+ .filepond {
+   width: 20%;
+   height: 20%;
+ }
+ 
+
+

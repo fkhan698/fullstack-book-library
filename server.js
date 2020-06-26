@@ -8,6 +8,7 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const path = require('path');
 
 //Routers
 const authorRouter = require('./routes/author');
@@ -25,6 +26,7 @@ db.once('open', () => console.log('Connected to Mongoose'));
 //View engine
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
+app.use('/public', express.static(path.join(__dirname, "public")));
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(methodOverride('_method'))

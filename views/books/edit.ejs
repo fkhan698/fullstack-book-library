@@ -1,4 +1,4 @@
-<h2>Edit Books Page</h2>
+<h2 class="page-header">Edit Books Page</h2>
 
 <form action="/books/<%= book.id %>?_method=PUT" method="POST">
     <div>
@@ -28,6 +28,6 @@
         <textarea required name="description"><%= book.description %></textarea>
       </div> 
 
-<a href="/books">Cancel</a>
-<button type="submit"> Update Book</button>
+<a class="btn" href="/books">Cancel</a>
+<button class="btn btn-primary" type="submit"> Update Book</button>
 </form>

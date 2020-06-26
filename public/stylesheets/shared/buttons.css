@@ -1,0 +1,46 @@
+:root {
+    --delete-button-background-color: red;
+    --delete-button-background-color-light: rgb(235, 79, 79);
+    --btn-primary-background-color: #8d538d;
+    --btn-primary-background-color-light: #967796;
+    --button-border-color: black;
+
+}
+
+.btn-row {
+    display: flex;
+    align-items: flex-start;
+}
+.btn {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-style: solid;
+    border-radius: 8%;
+    border-width: 1px;
+    border-color: var(--button-border-color);
+    margin: .5rem;
+    color: white;
+    background-color: #9094aa;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+   
+}
+.btn-danger{
+    background-color: var(--delete-button-background-color);
+    font-size: 1rem;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: var(--delete-button-background-color-light);
+}
+.btn-primary {
+    background-color: var(--btn-primary-background-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-background-color-light);
+}
+
+
+
+
