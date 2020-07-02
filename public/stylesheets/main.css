@@ -4,6 +4,7 @@
 @import '/public/stylesheets/shared/buttons.css';
 @import '/public/stylesheets/shared/form.css';
 @import '/public/stylesheets/shared/image.css';
+@import '/public/stylesheets/shared/book.css';
 
 :root {
     font-family:'Montserrat', sans-serif;
@@ -22,7 +23,7 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .header-nav ul {

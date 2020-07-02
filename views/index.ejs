@@ -8,14 +8,14 @@
 </head>
 <body>
     <h1 class="page-header">Recently Added</h1>
-    <div class="cover-row">
-        <% books.forEach(book => { %>
-                <a href="/books/<%= book.id %>">
-                    <img class="image-cover" height="150" width="100" src="<%= book.coverImagePath %>" alt="">
-                </a>
-                
+    
+    <div class="book-grid <%= bookGridClass %>">
+            <% books.forEach(book => { %>
+              <a href="/books/<%= book.id %>">
+                <img class="book-cover <%= bookCoverClass %>" src="<%= book.coverImagePath %>">
+              </a>
             <% }) %>
-    </div>
+          </div> 
     
 </body>
 </html>

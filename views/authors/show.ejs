@@ -9,10 +9,10 @@
 <% if(booksByAuthor.length > 0){ %>
     <h1>Books By Author</h1>
 
- <div class="cover-row"></div>
+ <div class="book-grid"></div>
     <% booksByAuthor.forEach(book => { %>
-       
-                <img class="image-cover" src="<%= book.coverImagePath %>">
+        
+                <img class="book-cover" src="<%= book.coverImagePath %>">
                 <p><%= book.title %></p>
             <% }) %>
         <% } %> 
