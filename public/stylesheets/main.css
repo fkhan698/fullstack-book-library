@@ -2,6 +2,8 @@
 @import '/public/stylesheets/shared/variables.css';
 @import '/public//stylesheets/shared/header.css';
 @import '/public/stylesheets/shared/buttons.css';
+@import '/public/stylesheets/shared/form.css';
+@import '/public/stylesheets/shared/image.css';
 
 :root {
     font-family:'Montserrat', sans-serif;
@@ -29,14 +31,18 @@ body {
 
  .page-header {
      font-size: 2.5rem;
+     text-align: center;
  }
 
  .btn {
     font-family:'Montserrat', sans-serif;
  }
  .filepond {
-   width: 20%;
-   height: 20%;
+   width: 200px;
+
+   border-style: solid;
+   border-color: white;
+   border-radius: 1rem;
  }
  
 

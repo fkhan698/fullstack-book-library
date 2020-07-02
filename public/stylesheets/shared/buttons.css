@@ -35,10 +35,16 @@
 }
 .btn-primary {
     background-color: var(--btn-primary-background-color);
+   
 }
 
 .btn-primary:hover {
     background-color: var(--btn-primary-background-color-light);
+}
+
+.form-end {
+    display: flex;
+    justify-content: center;
 }
 
 

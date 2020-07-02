@@ -9,8 +9,12 @@
 <h2 class="page-header">New Authors Page</h2>
 
 <form action="/authors" method="POST">
-<%- include('../authors/_form_field.ejs')%>
 
-<a class="btn" href="/authors">Cancel</a>
-<button class="btn btn-primary" type="submit"> Add Author</button>
+        <%- include('../authors/_form_field.ejs')%>
+        <div class="btn-row form-end">
+        <a class="btn" href="/authors">Cancel</a>
+        <button class="btn btn-primary" type="submit"> Add Author</button>
+        </div>
+        
+
 </form>
